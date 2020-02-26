@@ -1,0 +1,41 @@
+:host {
+  width: 410px;
+  height: 90px;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+}
+
+.images {
+  width: 70px;
+  height: 70px;
+  margin-left: 15px;
+  display: inline-block;
+}
+.houses {
+  height: 70px;
+  width: 100px;
+  margin-left: 20px;
+  align-items: center;
+}
+.members{
+  height: 70px;
+  margin-left: 150px;
+  align-items: center;
+}
+.houses p {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 5px;
+  color: #383838;
+}
+.houses p:hover {
+  color: #8f8411;
+}
+.members p {
+  font-size: 22px;
+  font-style: italic;
+  margin-left: 5px;
+  color: #383838;
+}

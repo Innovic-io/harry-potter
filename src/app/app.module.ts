@@ -7,6 +7,7 @@ import { ListComponent } from './components/list/list.component';
 import { ItemComponent } from './components/item/item.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BottomMenuComponent } from './components/bottom-menu/bottom-menu.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -18,9 +19,11 @@ import { BottomMenuComponent } from './components/bottom-menu/bottom-menu.compon
     BottomMenuComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
