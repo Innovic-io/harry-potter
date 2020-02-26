@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { faMagic } from '@fortawesome/free-solid-svg-icons';
+
+
+
 
 @Component({
   selector: 'app-bottom-menu',
@@ -6,10 +11,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bottom-menu.component.css']
 })
 export class BottomMenuComponent implements OnInit {
-
+  faUserCircle = faUserCircle;
+  faMagic = faMagic;
   constructor() { }
 
   ngOnInit(): void {
   }
 
 }
+
