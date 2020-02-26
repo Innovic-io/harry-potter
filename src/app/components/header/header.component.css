@@ -3,7 +3,7 @@
   display: block;
   border: 1px solid #cccccc;
   height: 140px;
-  position: absolute;
+  position: fixed;
   left: 0px;
   right: 0px;
   top: 0px;
@@ -40,6 +40,7 @@ h1 {
   font-family: Alegreya Sans SC;
   font-size: 20px;
 }
+
 
 
 

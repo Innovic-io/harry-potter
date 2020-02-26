@@ -2,27 +2,30 @@
   display: block;
   border: 1px solid #cccccc;
   height: 110px;
-  position: absolute;
+  position: fixed;
   left: 0%;
   right: 0%;
   bottom: 0%;
   background: linear-gradient(90.32deg, #6E95FD -5.81%, #6FDEFA 30.72%, #8DE061 73.39%, #51E85E 112.14%);
   box-shadow: inset 0px 0.5px 0px rgba(0, 0, 0, 0.25);
 }
-td {
-  font-size: 30px;
-  width: 60px;
-  text-align: center;
-}
-table {
-  margin-top: 8%;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
 
+.flex-container {
+  display: flex;
+  align-items: stretch;
 }
-fa-icon:hover {
-  background-color: #cccccc;
+
+.flex-container > div {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  flex: 1;
+}
+
+fa-icon {
+  cursor: pointer;
 }
 
 
