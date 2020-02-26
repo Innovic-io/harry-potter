@@ -1,5 +1,5 @@
-<app-header [title]="appTitle"></app-header>
-
-<app-list [title]="houses"></app-list>
+<app-header [title]="appTitle" (searchValue)="onSearch($event)"></app-header>
+{{search}}
+<app-list></app-list>
 
 <app-bottom-menu></app-bottom-menu>

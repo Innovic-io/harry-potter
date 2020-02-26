@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   public appTitle = 'Harry Potter';
+  public search: string;
   public houses = [
     {
       name: 'Gryffindor',
@@ -27,7 +28,10 @@ export class HomeComponent implements OnInit {
       members: 12
     }
   ];
-  constructor() { }
+  onSearch(event) {
+    this.search = event;
+  }
+    constructor() { }
 
   ngOnInit(): void {
   }
