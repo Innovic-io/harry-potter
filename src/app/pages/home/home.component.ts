@@ -11,19 +11,19 @@ export class HomeComponent implements OnInit {
   public houses = [
     {
       name: 'Gryffindor',
-      mascot: 'lion',
+      mascot: 'lion.png',
       school: 'Hogwarts School of Witchcraft and Wizardry',
       members: 12
     },
     {
       name: 'Gryffindor',
-      mascot: 'lion',
+      mascot: 'lion.png',
       school: 'Hogwarts School of Witchcraft and Wizardry',
       members: 12
     },
     {
       name: 'Gryffindor',
-      mascot: 'lion',
+      mascot: 'lion.png',
       school: 'Hogwarts School of Witchcraft and Wizardry',
       members: 12
     }

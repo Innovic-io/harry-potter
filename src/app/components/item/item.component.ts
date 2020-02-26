@@ -6,9 +6,13 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent implements OnInit {
-  @Input() house;
+  @Input() name: string;
+  @Input() mascot: string;
+  @Input() school: string;
+  @Input() members: string;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
+
 }

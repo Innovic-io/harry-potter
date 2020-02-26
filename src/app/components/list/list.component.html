@@ -1,3 +1,7 @@
-<app-item *ngFor="let house of title"> {{house}} </app-item>
+<app-item *ngFor="let house of houses"
+          [name]="house?.name"
+          [mascot]="house?.mascot"
+          [school]="house?.school"
+          [members]="house?.members"></app-item>
 
 
