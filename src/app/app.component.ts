@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppRouting } from './models/app';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'harry-potter';
+  public page = AppRouting.houses;
 }
