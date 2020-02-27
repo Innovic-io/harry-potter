@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {IHouses} from '../../models/houses';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class HomeComponent implements OnInit {
   public appTitle = 'Harry Potter';
   public search: string;
-  public houses = [
+  public houses: IHouses[] = [
     {
       name: 'Gryffindor',
       mascot: 'lion.png',
@@ -31,7 +32,8 @@ export class HomeComponent implements OnInit {
   onSearch(event) {
     this.search = event;
   }
-    constructor() { }
+
+  constructor() { }
 
   ngOnInit(): void {
   }

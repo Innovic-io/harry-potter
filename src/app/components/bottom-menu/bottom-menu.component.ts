@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import { faUserCircle, faMagic, faHome } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -7,6 +7,8 @@ import { faUserCircle, faMagic, faHome } from '@fortawesome/free-solid-svg-icons
   styleUrls: ['./bottom-menu.component.css']
 })
 export class BottomMenuComponent implements OnInit {
+
+  @Output() clickedIcon = new EventEmitter<string>();
   public faUserCircle = faUserCircle;
   public faMagic = faMagic;
   public faHome = faHome;
@@ -16,5 +18,9 @@ export class BottomMenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClick(event) {
+  this.clickedIcon.emit(event);
+  console.log(event);
+  }
 }
 

@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {IHouses} from '../../models/houses';
 
 @Component({
   selector: 'app-list',
@@ -6,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
-  @Input() houses: any;
+  @Input() houses: IHouses[];
   @Input() search: string;
 
   constructor() { }

@@ -9,7 +9,7 @@ export class ItemComponent implements OnInit {
   @Input() name: string;
   @Input() mascot: string;
   @Input() school: string;
-  @Input() members: string;
+  @Input() members: number;
 
   constructor() {}
 
