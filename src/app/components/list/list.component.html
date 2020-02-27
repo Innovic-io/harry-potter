@@ -3,4 +3,10 @@
           [mascot]="house?.mascot"
           [school]="house?.school"
           [members]="house?.members"
-           ></app-item>
+></app-item>
+
+<div *ngIf="(houses | search:searchTerm).length  === 0">
+  <p> No results... </p>
+</div>
+
+

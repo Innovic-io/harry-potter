@@ -6,3 +6,10 @@
   bottom: 0%;
   top: 140px;
 }
+
+p{
+  display: flex;
+  justify-content: center;
+  font-family: Alegreya Sans SC;
+  margin-top: 10px;
+}
