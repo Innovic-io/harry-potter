@@ -1,4 +1,4 @@
-<app-item *ngFor="let house of houses | search :search"
+<app-item *ngFor="let house of houses | search:searchTerm"
           [name]="house?.name"
           [mascot]="house?.mascot"
           [school]="house?.school"

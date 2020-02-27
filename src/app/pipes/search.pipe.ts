@@ -7,13 +7,12 @@ import {IHouses} from '../models/houses';
 export class SearchPipe implements PipeTransform {
 
   transform(items: IHouses[], searchText: string): IHouses[] {
-    console.log(items, searchText);
     if (!items || !searchText) {
       return items;
     }
-    searchText = searchText.toLowerCase();
+
     return items.filter(item => {
-      return item.name.toLowerCase().includes(searchText);
+      return item.name.toLowerCase().includes(searchText.toLowerCase());
     });
   }
 

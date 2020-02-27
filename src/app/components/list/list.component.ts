@@ -8,7 +8,7 @@ import {IHouses} from '../../models/houses';
 })
 export class ListComponent implements OnInit {
   @Input() houses: IHouses[];
-  @Input() search: string;
+  @Input() searchTerm: string;
 
   constructor() { }
 
