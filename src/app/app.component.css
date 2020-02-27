@@ -9,4 +9,6 @@
 }
 .bottom {
   height: 97px;
+  position: sticky;
+  bottom: 0;
 }
