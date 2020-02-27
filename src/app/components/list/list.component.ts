@@ -7,6 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class ListComponent implements OnInit {
   @Input() houses: any;
+  @Input() search: string;
 
   constructor() { }
 

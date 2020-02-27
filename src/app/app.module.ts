@@ -8,6 +8,7 @@ import { ItemComponent } from './components/item/item.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BottomMenuComponent } from './components/bottom-menu/bottom-menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SearchPipe } from './pipes/search.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ListComponent,
     ItemComponent,
     HomeComponent,
-    BottomMenuComponent
+    BottomMenuComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,

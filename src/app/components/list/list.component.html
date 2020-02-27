@@ -1,7 +1,6 @@
-<app-item *ngFor="let house of houses"
+<app-item *ngFor="let house of houses | search :search"
           [name]="house?.name"
           [mascot]="house?.mascot"
           [school]="house?.school"
-          [members]="house?.members"></app-item>
-
-
+          [members]="house?.members"
+           ></app-item>
