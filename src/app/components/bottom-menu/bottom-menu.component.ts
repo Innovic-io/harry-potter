@@ -1,5 +1,6 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { faUserCircle, faMagic, faHome } from '@fortawesome/free-solid-svg-icons';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {faUserCircle, faMagic, faHome} from '@fortawesome/free-solid-svg-icons';
+import {AppRouting} from '../../models/app';
 
 @Component({
   selector: 'app-bottom-menu',
@@ -12,12 +13,15 @@ export class BottomMenuComponent implements OnInit {
   public faMagic = faMagic;
   public faHome = faHome;
 
-  constructor() {}
+  constructor() {
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   onClick(event) {
     this.clickedIcon.emit(event);
+    console.log(event);
   }
 }
 

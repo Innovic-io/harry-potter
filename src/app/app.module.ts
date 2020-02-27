@@ -10,6 +10,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { BottomMenuComponent } from './components/bottom-menu/bottom-menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SearchPipe } from './pipes/search.pipe';
+import { SpellsComponent } from './pages/spells/spells.component';
+import { CharactersComponent } from './pages/characters/characters.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { SearchPipe } from './pipes/search.pipe';
     ItemComponent,
     HomeComponent,
     BottomMenuComponent,
-    SearchPipe
+    SearchPipe,
+    SpellsComponent,
+    CharactersComponent
   ],
   imports: [
     BrowserModule,

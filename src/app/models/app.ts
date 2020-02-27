@@ -1,5 +1,5 @@
 export enum AppRouting  {
-  houses = 'houses',
+  houses = 'houses' ,
   characters = 'characters',
   spells = 'spells'
 }
