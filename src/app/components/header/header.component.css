@@ -1,12 +1,9 @@
 :host {
-  display: block;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #cccccc;
   height: 140px;
-  position: fixed;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
+  padding:0 5px;
   background: linear-gradient(90.32deg, #B59144 -5.81%, #5F4B1F 30.72%, #392D13 73.39%, #8D8843 112.14%);
   box-shadow: inset 0px 0.5px 0px rgba(0, 0, 0, 0.25);
 }
@@ -19,18 +16,13 @@ h1 {
 }
 
 .search {
-  position: absolute;
-  left: 0px;
-  bottom: 25px;
-  right: 0px;
-  margin-left: auto;
-  margin-right: auto;
   height: 40px;
-  width: 350px;
+  width: 100%;
   background: rgba(0, 0, 0, 0.12);
   border-radius: 30px;
   border: 0.5px solid #cccccc;
   padding-left: 20px;
+  box-sizing: border-box;
   outline: none;
   font-family: Alegreya Sans SC;
 }
