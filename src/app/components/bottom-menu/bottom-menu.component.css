@@ -1,8 +1,8 @@
 :host {
   display: block;
   border: 1px solid #cccccc;
-  height: 110px;
   position: fixed;
+  height: 15%;
   left: 0px;
   right: 0px;
   bottom: 0px;
@@ -11,8 +11,8 @@
 }
 
 .flex-container {
-  display: flex;
   align-items: stretch;
+  display: flex;
 }
 
 .flex-container > div {
@@ -22,6 +22,7 @@
   line-height: 75px;
   font-size: 30px;
   flex: 1;
+  align-items: center;
 }
 
 fa-icon {

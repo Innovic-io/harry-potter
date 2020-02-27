@@ -1,7 +1,10 @@
+<div class="home">
 <app-home *ngIf="page === appRouting.houses"></app-home>
+</div>
 <app-characters *ngIf="page === appRouting.characters"></app-characters>
 <app-spells *ngIf="page === appRouting.spells"></app-spells>
 
+<div class="bottom">
 <app-bottom-menu (clickedIcon)="onClick($event)"></app-bottom-menu>
-
+</div>
 
