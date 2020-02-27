@@ -1,6 +1,6 @@
-<app-home *ngIf="page === 'houses'"></app-home>
-<app-characters *ngIf="page === 'characters'"></app-characters>
-<app-spells *ngIf="page === 'spells'"></app-spells>
+<app-home *ngIf="page === appRouting.houses"></app-home>
+<app-characters *ngIf="page === appRouting.characters"></app-characters>
+<app-spells *ngIf="page === appRouting.spells"></app-spells>
 
 <app-bottom-menu (clickedIcon)="onClick($event)"></app-bottom-menu>
 

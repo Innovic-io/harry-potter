@@ -8,8 +8,9 @@ import { AppRouting } from './models/app';
 })
 export class AppComponent {
   public page = AppRouting.houses;
+  public appRouting = AppRouting;
+
   onClick(event) {
     this.page = event;
   }
-
 }

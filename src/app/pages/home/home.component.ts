@@ -8,7 +8,7 @@ import {HouseService} from '../../services/house.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  public appTitle = 'Harry Potter';
+  public appTitle = 'Houses';
   public search: string;
   public houses: IHouses[];
 
