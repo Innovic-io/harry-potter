@@ -2,11 +2,8 @@
           [name]="house?.name"
           [mascot]="house?.mascot"
           [school]="house?.school"
-          [members]="house?.members"
+          [members]="house?.members?.length"
 ></app-item>
 
-<div *ngIf="(houses | search:searchTerm).length  === 0">
-  <p> No results... </p>
-</div>
-
+<p *ngIf="(houses | search:searchTerm)?.length === 0">No results...</p>
 

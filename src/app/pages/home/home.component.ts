@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {IHouses} from '../../models/houses';
+import {HouseService} from '../../services/house.service';
 
 @Component({
   selector: 'app-home',
@@ -9,33 +10,20 @@ import {IHouses} from '../../models/houses';
 export class HomeComponent implements OnInit {
   public appTitle = 'Harry Potter';
   public search: string;
-  public houses: IHouses[] = [
-    {
-      name: 'Gryffindor',
-      mascot: 'lion.png',
-      school: 'Hogwarts School of Witchcraft and Wizardry',
-      members: 12
-    },
-    {
-      name: 'Gryffindor',
-      mascot: 'lion.png',
-      school: 'Hogwarts School of Witchcraft and Wizardry',
-      members: 12
-    },
-    {
-      name: 'Gryffindor',
-      mascot: 'lion.png',
-      school: 'Hogwarts School of Witchcraft and Wizardry',
-      members: 12
-    }
-  ];
+  public houses: IHouses[];
+
   onSearch(event) {
     this.search = event;
   }
 
-  constructor() { }
+  constructor(private http: HouseService) {
+  }
 
   ngOnInit(): void {
+    this.http.getHouse()
+      .subscribe((data: any) => {
+        this.houses = data;
+      });
   }
 
 }
