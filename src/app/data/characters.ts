@@ -1,4 +1,4 @@
-const characters  = [
+export const characters  = [
   {
     _id: '5a0fa4daae5bc100213c232e',
     name: 'Hannah Abbott',
