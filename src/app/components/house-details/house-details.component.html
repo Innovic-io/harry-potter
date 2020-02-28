@@ -1,1 +1,29 @@
-<p>house-details works!</p>
+<div class="flex-container">
+  <div class="images">
+    <img src="../assets/logos/{{house.mascot}}.png" class="mascots">
+  </div>
+  <div class="houses">
+    <p> {{ house.name }} </p>
+  </div>
+  <div class="schools">
+    <p>Head of house: </p>
+    <small> {{ house.headOfHouse }} </small>
+  </div>
+  <div class="schools">
+    <p> School: </p>
+    <small> {{ house.school }} </small>
+  </div>
+  <div class="schools">
+    <p> Founder: </p>
+    <small> {{ house.founder }} </small>
+  </div>
+  <div class="schools">
+    <p> Ghost: </p>
+    <small>  {{ house.houseGhost }} </small>
+  </div>
+  <div class="schools"><p>Members:</p>
+  <small *ngFor="let member of house.members"> <li>{{ member.name }} </li> </small>
+  </div>
+</div>
+
+<!--<button>Back</button>-->

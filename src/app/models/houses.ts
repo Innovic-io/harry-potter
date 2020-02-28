@@ -4,5 +4,12 @@ export interface IHouses {
   mascot: string;
   headOfHouse: string;
   school: string;
-  members: string[];
+  members: IMember[];
+  houseGhost: string;
+  founder: string;
+}
+
+export interface IMember {
+  _id: string;
+  name: string;
 }

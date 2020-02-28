@@ -1,0 +1,118 @@
+:host {
+  width: 100%;
+  min-height: 90px;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+}
+
+.images {
+  width: 100px;
+  margin: 10px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.mascots{
+  width: 90px;
+  height: 90px;
+}
+
+.houses {
+  margin: 10px;
+  text-align: left;
+  font-size: 35px;
+  flex: 1;
+  margin-left: 15px;
+  margin-top: 35px;
+  align-items: center;
+  justify-content: center;
+}
+
+.houses p {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: #383838;
+  font-family: Alegreya Sans SC;
+}
+
+.houses small {
+  margin: 0;
+  font-size: 15px;
+  color: #383838;
+  font-family: Alegreya Sans SC;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  min-height: 90px;
+  flex-wrap: wrap;
+}
+
+.flex-container2 {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  min-height: 90px;
+  flex-wrap: wrap;
+}
+
+.members {
+  margin: 10px;
+  text-align: left;
+  font-size: 30px;
+  flex: 1;
+  margin-left: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.members p{
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: #383838;
+  font-family: Alegreya Sans SC;
+}
+
+.members small {
+  margin: 0;
+  font-size: 15px;
+  color: #383838;
+  font-family: Alegreya Sans SC;
+}
+
+
+.schools {
+  margin: 10px;
+  text-align: left;
+  font-size: 30px;
+  margin-left: 15px;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+}
+
+.schools p {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: #383838;
+  font-family: Alegreya Sans SC;
+}
+
+
+.schools small {
+  margin: 0;
+  font-size: 25px;
+  color: #383838;
+  font-family: Alegreya Sans SC;
+}
+
