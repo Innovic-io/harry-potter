@@ -26,6 +26,8 @@ h1 {
   box-sizing: border-box;
   outline: none;
   font-family: Alegreya Sans SC;
+  font-size: 20px;
+  color: white;
 }
 
 .search::placeholder  {
