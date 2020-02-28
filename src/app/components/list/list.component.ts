@@ -16,8 +16,8 @@ export class ListComponent implements OnInit {
   constructor() { }
    ngOnInit(): void {
   }
-  onClick(event) {
-    this.clickedHouse.emit(event);
+  onClick(houseID) {
+    this.clickedHouse.emit(houseID);
   }
 
 }

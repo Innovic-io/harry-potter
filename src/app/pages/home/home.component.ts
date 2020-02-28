@@ -1,6 +1,7 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {IHouses} from '../../models/houses';
-import {HouseService} from '../../services/house.service';
+import { Component, OnInit } from '@angular/core';
+
+import { IHouses } from '../../models/houses';
+import { HouseService } from '../../services/house.service';
 
 @Component({
   selector: 'app-home',
@@ -11,30 +12,27 @@ export class HomeComponent implements OnInit {
   public appTitle = 'Houses';
   public search: string;
   public houses: IHouses[];
-  public clickedItem: string;
+  public house: IHouses;
+  public isHouseView = false;
 
   onSearch(event) {
     this.search = event;
   }
 
-  onClick(event) {
-    this.http.getHouse(event)
-      .subscribe((data: IHouses[]) => {
-        this.houses = data;
+  onClickHouse(houseID) {
+    this.http.getHouse(houseID)
+      .subscribe((data: [IHouses]) => {
+        this.house = data[0];
+        this.isHouseView = true;
       });
   }
 
-  constructor(private http: HouseService) {
-  }
+  constructor(private http: HouseService) {}
 
   ngOnInit(): void {
     this.http.getHouses()
       .subscribe((data: IHouses[]) => {
         this.houses = data;
       });
-
-
-
   }
-
 }

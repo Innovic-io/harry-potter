@@ -1,6 +1,7 @@
-import {Component, OnInit} from '@angular/core';
-import {SpellService} from '../../services/spell.service';
-import {ISpells} from '../../models/spells';
+import { Component, OnInit } from '@angular/core';
+
+import { SpellService } from '../../services/spell.service';
+import { ISpells } from '../../models/spells';
 
 @Component({
   selector: 'app-spells',
@@ -16,7 +17,7 @@ export class SpellsComponent implements OnInit {
 
   ngOnInit(): void {
     this.http.getSpell()
-      .subscribe((data: any) => {
+      .subscribe((data: ISpells[]) => {
         this.spells = data;
       });
   }

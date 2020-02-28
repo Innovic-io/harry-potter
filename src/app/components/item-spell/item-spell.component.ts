@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-item-spell',
@@ -9,7 +9,6 @@ export class ItemSpellComponent implements OnInit {
   @Input() spell: string;
   @Input() type: string;
   @Input() effect: string;
-  constructor() { }
 
   ngOnInit(): void {
   }
