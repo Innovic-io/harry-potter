@@ -10,7 +10,6 @@ export class SearchPipe implements PipeTransform {
     if (!items || !searchText) {
       return items;
     }
-
     return items.filter(item => {
       const houseName = item.name.toLowerCase().includes(searchText.toLowerCase());
       const headOfHouse = item.headOfHouse.toLowerCase().includes(searchText.toLowerCase());

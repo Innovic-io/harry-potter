@@ -11,8 +11,13 @@ import { CharacterService } from '../../services/character.service';
 export class CharactersComponent implements OnInit {
   public charactersTitle = 'Characters';
   public characters: ICharacters[];
+  public search: string;
 
-  constructor(private http: CharacterService) { }
+  constructor(private http: CharacterService) {}
+
+  onSearch(event) {
+    this.search = event;
+  }
 
   ngOnInit(): void {
     this.http.getCharacter()

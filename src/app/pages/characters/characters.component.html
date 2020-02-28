@@ -1,6 +1,6 @@
 <div class = "header">
-  <app-header [title]="charactersTitle"></app-header>
+  <app-header [title]="charactersTitle" (searchValue)="onSearch($event)"></app-header>
 </div>
 <div class = "content">
-  <app-list [characters]="characters"></app-list>
+  <app-list [characters]="characters" [searchTerm]="search"></app-list>
 </div>

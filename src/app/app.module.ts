@@ -16,6 +16,7 @@ import { ItemSpellComponent } from './components/item-spell/item-spell.component
 import { HouseDetailsComponent } from './components/house-details/house-details.component';
 import { SearchSpellsPipe } from './pipes/search-spells.pipe';
 import { ItemCharacterComponent } from './components/item-character/item-character.component';
+import { SearchCharactersPipe } from './pipes/search-characters.pipe';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ItemCharacterComponent } from './components/item-character/item-charact
     HouseDetailsComponent,
     SearchSpellsPipe,
     ItemCharacterComponent,
+    SearchCharactersPipe,
   ],
   imports: [
     BrowserModule,

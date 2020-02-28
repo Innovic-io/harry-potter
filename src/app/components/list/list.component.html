@@ -4,7 +4,6 @@
           [headOfHouse]="house?.headOfHouse"
           [members]="house?.members?.length"
           (click)="onClick(house?._id)">
-
 </app-item>
 
 <div *ngIf="(houses | search:searchTerm)?.length === 0" class="illustration">
@@ -20,24 +19,28 @@
                 [effect]="spell?.effect">
 </app-item-spell>
 
-<app-item-character *ngFor="let character of characters"
-                    [name]="character?.name"
-                    [role]="character?.role"
-                    [house]="character?.house"
-                    [school]="character?.school"
-                    [bloodStatus]="character?.bloodStatus"
-                    [species]="character?.species"
-
-></app-item-character>
-
-
-
 <div *ngIf="(spells | searchSpells:searchTerm)?.length === 0" class="illustration">
   <div class="image">
-  <img src="./assets/logos/package_not_found.png" class="noResult">
-  <p>No results...</p>
+    <img src="./assets/logos/package_not_found.png" class="noResult">
+    <p>No results...</p>
   </div>
 </div>
+
+<app-item-character *ngFor="let character of characters | searchCharacters:searchTerm"
+                    [name]="character?.name"
+                    [bloodStatus]="character?.bloodStatus"
+                    [school]="character?.school"
+></app-item-character>
+
+<div *ngIf="(characters | searchCharacters:searchTerm)?.length === 0" class="illustration">
+  <div class="image">
+    <img src="./assets/logos/package_not_found.png" class="noResult">
+    <p>No results...</p>
+  </div>
+</div>
+
+
+
 
 
 

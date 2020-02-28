@@ -9,8 +9,8 @@ export class ItemCharacterComponent implements OnInit {
   @Input() name: string;
   @Input() role: string;
   @Input() house: string;
-  @Input() school: string;
   @Input() bloodStatus: string;
+  @Input() school: string;
   @Input() species: string;
 
 
