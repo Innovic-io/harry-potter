@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {SpellService} from '../../services/spell.service';
+import {ISpells} from '../../models/spells';
 
 @Component({
   selector: 'app-spells',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./spells.component.css']
 })
 export class SpellsComponent implements OnInit {
+  public spellsTitle = 'Spells';
+  public spells: ISpells[];
 
-  constructor() { }
+  constructor(private http: SpellService) {
+  }
 
   ngOnInit(): void {
+    this.http.getSpell()
+      .subscribe((data: any) => {
+        this.spells = data;
+      });
   }
 
 }

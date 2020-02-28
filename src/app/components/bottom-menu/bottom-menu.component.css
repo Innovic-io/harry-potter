@@ -25,4 +25,8 @@ fa-icon {
   color: white;
 }
 
+fa-icon:hover {
+  color: #8D8843;
+}
+
 

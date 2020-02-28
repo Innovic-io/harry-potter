@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {IHouses} from '../../models/houses';
+import {ISpells} from '../../models/spells';
 
 @Component({
   selector: 'app-list',
@@ -8,6 +9,7 @@ import {IHouses} from '../../models/houses';
 })
 export class ListComponent implements OnInit {
   @Input() houses: IHouses[];
+  @Input() spells: ISpells[];
   @Input() searchTerm: string;
   @Output() clickedHouse = new EventEmitter<string>();
 

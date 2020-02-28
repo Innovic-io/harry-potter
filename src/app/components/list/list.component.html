@@ -9,3 +9,8 @@
 
 <p *ngIf="(houses | search:searchTerm)?.length === 0">No results...</p>
 
+<app-item-spell *ngFor="let spell of spells"
+                [spell]="spell?.spell"
+                [type]="spell?.type"
+                [effect]="spell?.effect">
+</app-item-spell>
