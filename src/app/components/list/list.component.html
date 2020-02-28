@@ -15,4 +15,15 @@
                 [effect]="spell?.effect">
 </app-item-spell>
 
+<app-item-character *ngFor="let character of characters"
+                    [name]="character?.name"
+                    [role]="character?.role"
+                    [house]="character?.house"
+                    [school]="character?.school"
+                    [bloodStatus]="character?.bloodStatus"
+                    [species]="character?.species"
+
+></app-item-character>
+
+
 
