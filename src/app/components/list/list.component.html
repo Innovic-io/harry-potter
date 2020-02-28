@@ -1,7 +1,7 @@
 <app-item *ngFor="let house of houses | search:searchTerm"
           [name]="house?.name"
           [mascot]="house?.mascot"
-          [school]="house?.school"
+          [headOfHouse]="house?.headOfHouse"
           [members]="house?.members?.length"
 ></app-item>
 
