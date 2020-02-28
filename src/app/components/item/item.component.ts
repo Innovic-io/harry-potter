@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ItemComponent implements OnInit {
   @Input() name: string;
   @Input() mascot: string;
-  @Input() school: string;
+  @Input() headOfHouse: string;
   @Input() members: number;
 
   constructor() {}
