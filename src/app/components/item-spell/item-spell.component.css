@@ -5,62 +5,47 @@
   display: flex;
 }
 
-.images {
-  width: 100px;
-  margin: 10px;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.mascots{
-  width: 70px;
-  height: 70px;
-}
-
-.houses {
+.effect {
   margin: 10px;
   text-align: left;
-  font-size: 30px;
+  font-size: 25px;
   flex: 1;
-  margin-left: 15px;
   align-items: center;
   justify-content: center;
 }
 
-.members{
-  width: 100px;
+.spell {
+  width: 150px;
   margin: 10px;
-  font-size: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.houses p {
+.effect p {
   margin: 0;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   color: #383838;
   font-family: Alegreya Sans SC;
 }
 
-.houses p:hover {
+.effect p:hover {
   color: #8f8411;
   cursor: pointer;
 }
-.houses small {
+.effect small {
   margin: 0;
   font-size: 15px;
   color: #383838;
   font-family: Alegreya Sans SC;
 }
 
-.members p {
-  font-size: 25px;
+.spell p {
+  font-size: 20px;
   color: #383838;
   font-family: Alegreya Sans SC;
+  text-align: center;
 }
 
 .flex-container {
@@ -69,4 +54,17 @@
   align-items: stretch;
   flex-direction: row;
   min-height: 90px;
+}
+.type {
+  width: 100px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.type p {
+  font-size: 15px;
+  color: #383838;
+  font-family: Alegreya Sans SC;
+  text-align: center;
 }
