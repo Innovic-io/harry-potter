@@ -2,7 +2,7 @@
     <app-header [title]="appTitle" (searchValue)="onSearch($event)"></app-header>
   </div>
   <div class="content">
-    <app-list [houses]="houses" [searchTerm]="search"></app-list>
+    <app-list [houses]="houses" [searchTerm]="search" (clickedHouse)="onClick($event)"></app-list>
   </div>
 
 

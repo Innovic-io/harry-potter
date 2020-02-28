@@ -3,7 +3,9 @@
           [mascot]="house?.mascot"
           [headOfHouse]="house?.headOfHouse"
           [members]="house?.members?.length"
-></app-item>
+          (click)="onClick(house?._id)">
+
+</app-item>
 
 <p *ngIf="(houses | search:searchTerm)?.length === 0">No results...</p>
 

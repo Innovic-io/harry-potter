@@ -11,17 +11,23 @@ export class HomeComponent implements OnInit {
   public appTitle = 'Houses';
   public search: string;
   public houses: IHouses[];
+  public clickedItem: string;
 
   onSearch(event) {
     this.search = event;
+  }
+
+  onClick(event) {
+    this.clickedItem = event;
+    console.log(this.clickedItem);
   }
 
   constructor(private http: HouseService) {
   }
 
   ngOnInit(): void {
-    this.http.getHouse()
-      .subscribe((data: any) => {
+    this.http.getHouses()
+      .subscribe((data: IHouses[]) => {
         this.houses = data;
       });
   }
