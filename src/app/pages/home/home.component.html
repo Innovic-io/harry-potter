@@ -1,14 +1,6 @@
-<div *ngIf="isHouseView === false">
-  <div class="header">
-    <app-header [title]="appTitle" (searchValue)="onSearch($event)"></app-header>
-  </div>
-  <app-list [houses]="houses" [searchTerm]="search" (clickedHouse)="onClickHouse($event)"></app-list>
+<div class="header">
+  <app-header [title]="isHouseView ? house?.name : appTitle" (searchValue)="onSearch($event)"></app-header>
 </div>
-<div *ngIf="isHouseView === true">
-  <div class="header">
-    <app-header title="Details" (searchValue)="onSearch($event)"></app-header>
-  </div>
-  <app-house-details [house]="house"></app-house-details>
-</div>
-
+<app-list *ngIf="isHouseView === false" [houses]="houses" [searchTerm]="search" (clickedHouse)="onClickHouse($event)"></app-list>
+<app-house-details *ngIf="isHouseView === true" [house]="house"></app-house-details>
 
