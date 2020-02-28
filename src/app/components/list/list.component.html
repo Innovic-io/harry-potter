@@ -7,9 +7,14 @@
 
 </app-item>
 
-<p *ngIf="(houses | search:searchTerm)?.length === 0">No results...</p>
+<div *ngIf="(houses | search:searchTerm)?.length === 0" class="illustration">
+  <div class="image">
+    <img src="./assets/logos/package_not_found.png" class="noResult">
+    <p>No results...</p>
+  </div>
+</div>
 
-<app-item-spell *ngFor="let spell of spells"
+<app-item-spell *ngFor="let spell of spells | searchSpells:searchTerm"
                 [spell]="spell?.spell"
                 [type]="spell?.type"
                 [effect]="spell?.effect">
@@ -24,6 +29,15 @@
                     [species]="character?.species"
 
 ></app-item-character>
+
+
+
+<div *ngIf="(spells | searchSpells:searchTerm)?.length === 0" class="illustration">
+  <div class="image">
+  <img src="./assets/logos/package_not_found.png" class="noResult">
+  <p>No results...</p>
+  </div>
+</div>
 
 
 

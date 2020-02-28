@@ -11,6 +11,11 @@ import { ISpells } from '../../models/spells';
 export class SpellsComponent implements OnInit {
   public spellsTitle = 'Spells';
   public spells: ISpells[];
+  public search: string;
+
+  onSearch(event) {
+    this.search = event;
+  }
 
   constructor(private http: SpellService) {
   }

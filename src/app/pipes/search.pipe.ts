@@ -12,8 +12,20 @@ export class SearchPipe implements PipeTransform {
     }
 
     return items.filter(item => {
-      return item.name.toLowerCase().includes(searchText.toLowerCase());
-    });
-  }
+      const houseName = item.name.toLowerCase().includes(searchText.toLowerCase());
+      const headOfHouse = item.headOfHouse.toLowerCase().includes(searchText.toLowerCase());
+      const members = item.members.length;
 
+      if (houseName) {
+        return houseName;
+      }
+      if (headOfHouse) {
+        return headOfHouse;
+      }
+      if (members.toString() === searchText) {
+        return members;
+      }
+    });
+
+  }
 }

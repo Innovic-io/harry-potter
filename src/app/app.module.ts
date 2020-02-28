@@ -13,7 +13,8 @@ import { SearchPipe } from './pipes/search.pipe';
 import { SpellsComponent } from './pages/spells/spells.component';
 import { CharactersComponent } from './pages/characters/characters.component';
 import { ItemSpellComponent } from './components/item-spell/item-spell.component';
-import {HouseDetailsComponent} from './components/house-details/house-details.component';
+import { HouseDetailsComponent } from './components/house-details/house-details.component';
+import { SearchSpellsPipe } from './pipes/search-spells.pipe';
 import { ItemCharacterComponent } from './components/item-character/item-character.component';
 
 @NgModule({
@@ -29,6 +30,7 @@ import { ItemCharacterComponent } from './components/item-character/item-charact
     CharactersComponent,
     ItemSpellComponent,
     HouseDetailsComponent,
+    SearchSpellsPipe,
     ItemCharacterComponent,
   ],
   imports: [

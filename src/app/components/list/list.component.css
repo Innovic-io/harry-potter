@@ -3,9 +3,24 @@
   flex-direction: column;
 }
 
-p{
+.illustration {
   display: flex;
+  margin-top:100px;
+  height: 100%;
+  align-items: center;
   justify-content: center;
+}
+.image {
+  height: 144px;
+  margin-bottom: 32px;
+}
+.noResult {
+  height: 144px;
+  width: 250px;
+}
+p{
+  justify-content: center;
+  text-align: center;
   font-family: Alegreya Sans SC;
   margin-top: 10px;
 }

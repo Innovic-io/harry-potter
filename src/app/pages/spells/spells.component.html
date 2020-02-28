@@ -1,7 +1,7 @@
  <div class="header">
-    <app-header [title]="spellsTitle" ></app-header>
+    <app-header [title]="spellsTitle" (searchValue)="onSearch($event)"></app-header>
   </div>
   <div class="content">
-    <app-list [spells]="spells"></app-list>
+    <app-list [spells]="spells" [searchTerm]="search"></app-list>
   </div>
 
