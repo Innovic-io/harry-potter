@@ -12,7 +12,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SearchPipe } from './pipes/search.pipe';
 import { SpellsComponent } from './pages/spells/spells.component';
 import { CharactersComponent } from './pages/characters/characters.component';
-import { ItemSpellComponent } from './components/item-spell/item-spell.component';
+import {ItemSpellComponent} from './components/item-spell/item-spell.component';
+import {HouseDetailsComponent} from './components/house-details/house-details.component';
+import {DetailsComponent} from './pages/details/details.component';
+
+
 
 @NgModule({
   declarations: [
@@ -25,7 +29,9 @@ import { ItemSpellComponent } from './components/item-spell/item-spell.component
     SearchPipe,
     SpellsComponent,
     CharactersComponent,
-    ItemSpellComponent
+    ItemSpellComponent,
+    HouseDetailsComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

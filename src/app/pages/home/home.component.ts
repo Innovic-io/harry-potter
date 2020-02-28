@@ -18,8 +18,10 @@ export class HomeComponent implements OnInit {
   }
 
   onClick(event) {
-    this.clickedItem = event;
-    console.log(this.clickedItem);
+    this.http.getHouse(event)
+      .subscribe((data: IHouses[]) => {
+        this.houses = data;
+      });
   }
 
   constructor(private http: HouseService) {
@@ -30,6 +32,9 @@ export class HomeComponent implements OnInit {
       .subscribe((data: IHouses[]) => {
         this.houses = data;
       });
+
+
+
   }
 
 }

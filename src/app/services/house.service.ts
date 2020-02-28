@@ -14,4 +14,8 @@ export class HouseService {
   getHouses() {
     return this.http.get(`${this.apiRoot}houses?key=${this.token}`);
   }
+
+  getHouse(houseId: string) {
+    return this.http.get(`${this.apiRoot}houses/${houseId}?key=${this.token}`);
+  }
 }
