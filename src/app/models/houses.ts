@@ -1,4 +1,5 @@
 export interface IHouses {
+  _id: string;
   name: string;
   mascot: string;
   headOfHouse: string;

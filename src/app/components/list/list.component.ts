@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {IHouses} from '../../models/houses';
 
 @Component({
@@ -9,10 +9,13 @@ import {IHouses} from '../../models/houses';
 export class ListComponent implements OnInit {
   @Input() houses: IHouses[];
   @Input() searchTerm: string;
+  @Output() clickedHouse = new EventEmitter<string>();
 
   constructor() { }
-
-  ngOnInit(): void {
+   ngOnInit(): void {
+  }
+  onClick(event) {
+    this.clickedHouse.emit(event);
   }
 
 }
