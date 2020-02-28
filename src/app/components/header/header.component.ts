@@ -8,6 +8,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 export class HeaderComponent implements OnInit {
   @Input() title: string;
   @Output() searchValue = new EventEmitter<string>();
+  @Input() isSearchOn = true;
 
   constructor() {
   }
@@ -16,7 +17,8 @@ export class HeaderComponent implements OnInit {
     this.searchValue.emit(event.target.value);
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 }
 
 

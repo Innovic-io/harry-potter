@@ -15,15 +15,23 @@
   flex: 1;
 }
 
-.mascots{
+.mascots {
   width: 90px;
   height: 90px;
 }
 
+.button {
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
 .houses {
   margin: 10px;
-  text-align: left;
-  font-size: 35px;
   flex: 1;
   margin-left: 15px;
   margin-top: 35px;
@@ -33,10 +41,11 @@
 
 .houses p {
   margin: 0;
-  font-size: 25px;
+  font-size: 35px;
   font-weight: bold;
   color: #383838;
   font-family: Alegreya Sans SC;
+  margin-right: 10px;
 }
 
 .houses small {
@@ -64,32 +73,6 @@
   flex-wrap: wrap;
 }
 
-.members {
-  margin: 10px;
-  text-align: left;
-  font-size: 30px;
-  flex: 1;
-  margin-left: 15px;
-  align-items: center;
-  justify-content: center;
-}
-
-.members p{
-  margin: 0;
-  font-size: 25px;
-  font-weight: bold;
-  color: #383838;
-  font-family: Alegreya Sans SC;
-}
-
-.members small {
-  margin: 0;
-  font-size: 15px;
-  color: #383838;
-  font-family: Alegreya Sans SC;
-}
-
-
 .schools {
   margin: 10px;
   text-align: left;
@@ -108,11 +91,46 @@
   font-family: Alegreya Sans SC;
 }
 
+.schools li {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: #383838;
+  font-family: Alegreya Sans SC;
+  list-style: circle;
+}
 
 .schools small {
   margin: 0;
-  font-size: 25px;
+  font-size: 18px;
   color: #383838;
   font-family: Alegreya Sans SC;
+}
+
+.border {
+  border-bottom: 1px solid #cccccc;
+  width: 100%;
+}
+
+.backButton {
+  box-shadow: 0px 0px 0px 0px #8D8843;
+  background: white;
+  border-radius: 15px;
+  border: 2px solid #5F4B1F;
+  cursor: pointer;
+  color: #5F4B1F;
+  font-family: Alegreya Sans SC;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px  #8D8843;
+  outline: none;
+}
+
+.backButton:hover {
+  background:linear-gradient(to bottom, #8D8843 5%, #5F4B1F 100%);
+  background-color: #5F4B1F;
+  color: white;
 }
 

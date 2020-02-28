@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { IHouses } from '../../models/houses';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {IHouses} from '../../models/houses';
 
 @Component({
   selector: 'app-house-details',
@@ -9,6 +9,11 @@ import { IHouses } from '../../models/houses';
 export class HouseDetailsComponent implements OnInit {
   @Input() house: IHouses;
   @Input() houses: IHouses[];
+  @Output() clickBack = new EventEmitter<string>();
+
+  onClickBack(event) {
+    this.clickBack.emit(event);
+  }
 
   ngOnInit(): void {
   }

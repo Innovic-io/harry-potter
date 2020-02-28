@@ -5,25 +5,33 @@
   <div class="houses">
     <p> {{ house.name }} </p>
   </div>
+  <div class="border"></div>
   <div class="schools">
-    <p>Head of house: </p>
-    <small> {{ house.headOfHouse }} </small>
+    <small>Head of house: </small>
+    <p> {{ house.headOfHouse }} </p>
   </div>
+  <div class="border"></div>
   <div class="schools">
-    <p> School: </p>
-    <small> {{ house.school }} </small>
+    <small> School: </small>
+    <p> {{ house.school }} </p>
   </div>
+  <div class="border"></div>
   <div class="schools">
-    <p> Founder: </p>
-    <small> {{ house.founder }} </small>
+    <small> Founder: </small>
+    <p> {{ house.founder }} </p>
   </div>
+  <div class="border"></div>
   <div class="schools">
-    <p> Ghost: </p>
-    <small>  {{ house.houseGhost }} </small>
+    <small> Ghost: </small>
+    <p>  {{ house.houseGhost }} </p>
   </div>
-  <div class="schools"><p>Members:</p>
-  <small *ngFor="let member of house.members"> <li>{{ member.name }} </li> </small>
+  <div class="border"></div>
+  <div class="schools"><small>Members:</small>
+  <li *ngFor="let member of house.members"> {{ member.name }} </li>
+  </div>
+  <div class="border"></div>
+  <div class="button">
+  <button class="backButton" (click)='onClickBack(false)'>Go back</button>
   </div>
 </div>
 
-<!--<button>Back</button>-->

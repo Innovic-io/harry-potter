@@ -18,6 +18,9 @@ export class HomeComponent implements OnInit {
   onSearch(event) {
     this.search = event;
   }
+  onClickBack(event) {
+    this.isHouseView = event;
+  }
 
   onClickHouse(houseID) {
     this.http.getHouse(houseID)
