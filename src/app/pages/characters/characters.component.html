@@ -1,6 +1,17 @@
-<div class = "header">
+<div class="header">
   <app-header [title]="charactersTitle" (searchValue)="onSearch($event)"></app-header>
 </div>
-<div class = "content">
+<div class="content">
+  <div class="flex-container">
+    <div class="nameOfCharacter">
+      <h3>Character</h3>
+    </div>
+    <div class="bloodStatus">
+      <h3>Blood status</h3>
+    </div>
+    <div class="school">
+      <h3>School</h3>
+    </div>
+  </div>
   <app-list [characters]="characters" [searchTerm]="search"></app-list>
 </div>

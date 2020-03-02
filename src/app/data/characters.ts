@@ -509,7 +509,7 @@ export const characters  = [
   {
     _id: '5a1096b33dc2080021cd8762',
     name: 'Aberforth Dumbledore',
-    role: 'Owner, Hog\'s Head Inn',
+    role: 'Owner, Hog\'\s Head Inn',
     house: 'Gryffindor',
     school: 'Hogwarts School of Witchcraft and Wizardry',
     alias: 'Ab',
@@ -1239,7 +1239,7 @@ export const characters  = [
   {
     _id: '5a1222c50f5ae10021650d6d',
     name: 'Madam Malkin',
-    role: 'Shop Owner, Madam Malkin\'s Robes for All Occasions',
+    role: 'Shop Owner, Madam Malkin\'\s Robes for All Occasions',
     __v: 0,
     ministryOfMagic: false,
     orderOfThePhoenix: false,
@@ -1871,7 +1871,7 @@ export const characters  = [
     role: 'student',
     house: 'Gryffindor',
     school: 'Hogwarts School of Witchcraft and Wizardry',
-    boggart: 'severed hand walking on it\'s own',
+    boggart: 'severed hand walking on it\'\s own',
     __v: 0,
     ministryOfMagic: false,
     orderOfThePhoenix: false,
@@ -2050,7 +2050,7 @@ export const characters  = [
   {
     _id: '5a12387a0f5ae10021650da8',
     name: 'Fred Weasley',
-    role: 'co-owner of Weasleys\' Wizard Wheezes',
+    role: 'co-owner of Weasleys\'\ Wizard Wheezes',
     house: 'Gryffindor',
     school: 'Hogwarts School of Witchcraft and Wizardry',
     __v: 0,
@@ -2064,7 +2064,7 @@ export const characters  = [
   {
     _id: '5a1238b20f5ae10021650da9',
     name: 'George Weasley',
-    role: 'co-owner of Weasleys\' Wizard Wheezes',
+    role: 'co-owner of Weasleys\'\ Wizard Wheezes',
     house: 'Gryffindor',
     school: 'Hogwarts School of Witchcraft and Wizardry',
     __v: 0,

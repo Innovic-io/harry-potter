@@ -18,6 +18,7 @@ export class CharacterService {
     if (environment.offline) {
       return of(characters);
     }
+
     return this.http.get(`${this.apiRoot}characters?key=${this.token}`);
   }
 }
