@@ -11,8 +11,10 @@ export class ItemCharacterComponent implements OnInit {
   @Input() house: string;
   @Input() bloodStatus: string;
   @Input() school: string;
-  @Input() species: string;
-
+  @Input() orderOfThePhoenix: boolean;
+  @Input() ministryOfMagic: boolean;
+  @Input() dumbledoresArmy: boolean;
+  @Input() deathEater: boolean;
 
   ngOnInit(): void {
   }

@@ -5,4 +5,8 @@ export interface ICharacters {
   school: string;
   bloodStatus: string;
   species: string;
+  ministryOfMagic: boolean;
+  orderOfThePhoenix: boolean;
+  dumbledoresArmy: boolean;
+  deathEater: boolean;
 }

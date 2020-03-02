@@ -26,10 +26,14 @@
   </div>
 </div>
 
-<app-item-character *ngFor="let character of characters | searchCharacters:searchTerm"
+<app-item-character *ngFor="let character of characters  | searchCharacters:searchTerm"
                     [name]="character?.name"
                     [bloodStatus]="character?.bloodStatus"
                     [school]="character?.school"
+                    [dumbledoresArmy]="character?.dumbledoresArmy"
+                    [ministryOfMagic]="character?.ministryOfMagic"
+                    [orderOfThePhoenix]="character?.orderOfThePhoenix"
+                    [deathEater]="character?.deathEater"
 ></app-item-character>
 
 <div *ngIf="(characters | searchCharacters:searchTerm)?.length === 0" class="illustration">

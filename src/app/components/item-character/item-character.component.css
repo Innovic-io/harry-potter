@@ -11,7 +11,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
+
 .nameOfCharacter p {
   font-size: 20px;
   color: #383838;
@@ -64,4 +66,18 @@
   color: #383838;
   font-family: Alegreya Sans SC;
   text-align: center;
+}
+
+.badges {
+  width: 100px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.images {
+  width: 35px;
+  height: 35px;
+  display: flex;
 }

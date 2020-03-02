@@ -6,22 +6,22 @@
     <p> {{ house.name }} </p>
   </div>
   <div class="border"></div>
-  <div class="schools">
+  <div class="schools" *ngIf="house.headOfHouse">
     <small>Head of house: </small>
     <p> {{ house.headOfHouse }} </p>
   </div>
   <div class="border"></div>
-  <div class="schools">
+  <div class="schools" *ngIf="house.school">
     <small> School: </small>
     <p> {{ house.school }} </p>
   </div>
   <div class="border"></div>
-  <div class="schools">
+  <div class="schools" *ngIf="house.founder">
     <small> Founder: </small>
     <p> {{ house.founder }} </p>
   </div>
   <div class="border"></div>
-  <div class="schools">
+  <div class="schools" *ngIf="house.houseGhost">
     <small> Ghost: </small>
     <p>  {{ house.houseGhost }} </p>
   </div>
