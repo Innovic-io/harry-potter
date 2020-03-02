@@ -1,7 +1,7 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {IHouses} from '../../models/houses';
-import {ISpells} from '../../models/spells';
-import {ICharacters} from '../../models/characters';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { IHouses } from '../../models/houses';
+import { ISpells } from '../../models/spells';
+import { ICharacters } from '../../models/characters';
 
 @Component({
   selector: 'app-list',

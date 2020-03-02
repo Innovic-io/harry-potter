@@ -1,5 +1,5 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {IHouses} from '../../models/houses';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { IHouses } from '../../models/houses';
 
 @Component({
   selector: 'app-house-details',

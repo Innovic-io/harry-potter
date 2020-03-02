@@ -10,14 +10,17 @@
   align-items: center;
   justify-content: center;
 }
+
 .image {
   height: 144px;
   margin-bottom: 32px;
 }
+
 .noResult {
   height: 144px;
   width: 250px;
 }
+
 p{
   justify-content: center;
   text-align: center;

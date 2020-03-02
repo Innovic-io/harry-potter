@@ -1,6 +1,5 @@
-import {Pipe, PipeTransform} from '@angular/core';
-import {IHouses} from '../models/houses';
-import {ISpells} from '../models/spells';
+import { Pipe, PipeTransform } from '@angular/core';
+import { ISpells } from '../models/spells';
 
 @Pipe({
   name: 'searchSpells'
