@@ -15,6 +15,9 @@ export class SearchCharactersPipe implements PipeTransform {
       const name = item.name.toLowerCase().includes(searchText.toLowerCase());
       const bloodStatus = item.bloodStatus.toLowerCase().includes(searchText.toLowerCase());
 
+      if (item.school) {
+        return item.school.toLowerCase().includes(searchText.toLowerCase());
+      }
       if (name) {
         return name;
       }
