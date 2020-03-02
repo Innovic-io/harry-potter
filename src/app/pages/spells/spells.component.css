@@ -8,3 +8,54 @@
 
 .content {
 }
+
+.effect {
+  margin: 10px;
+  text-align: center;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.spell {
+  width: 150px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.effect h3 {
+  color: #383838;
+  font-family: Alegreya Sans SC;
+  text-align: center;
+}
+
+.spell h3 {
+  color: #383838;
+  font-family: Alegreya Sans SC;
+  text-align: center;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  min-height: 70px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.type {
+  width: 100px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.type h3 {
+  color: #383838;
+  font-family: Alegreya Sans SC;
+  text-align: center;
+}
