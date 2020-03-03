@@ -2,7 +2,6 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ICharacters } from '../../models/characters';
 import { CharacterService } from '../../services/character.service';
 
-
 @Component({
   selector: 'app-characters',
   templateUrl: './characters.component.html',

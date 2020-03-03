@@ -1,11 +1,8 @@
 <div class="container">
   <div class="home">
-    <app-home *ngIf="page === appRouting.houses"></app-home>
-    <app-characters *ngIf="page === appRouting.characters"></app-characters>
-    <app-spells *ngIf="page === appRouting.spells"></app-spells>
+    <router-outlet></router-outlet>
   </div>
-
   <div class="bottom">
-    <app-bottom-menu (clickedIcon)="onClick($event)"></app-bottom-menu>
+    <app-bottom-menu></app-bottom-menu>
   </div>
 </div>

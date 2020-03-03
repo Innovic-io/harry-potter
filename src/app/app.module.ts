@@ -17,7 +17,16 @@ import { HouseDetailsComponent } from './components/house-details/house-details.
 import { SearchSpellsPipe } from './pipes/search-spells.pipe';
 import { ItemCharacterComponent } from './components/item-character/item-character.component';
 import { SearchCharactersPipe } from './pipes/search-characters.pipe';
+import {RouterModule} from '@angular/router';
 
+const appRoutes = [
+  { path: 'home', component: HomeComponent },
+  { path: 'home/:id', component: HouseDetailsComponent },
+  { path: 'spells', component: SpellsComponent },
+  { path: 'characters', component: CharactersComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full'},
+
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +47,11 @@ import { SearchCharactersPipe } from './pipes/search-characters.pipe';
   imports: [
     BrowserModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true }
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
