@@ -11,8 +11,7 @@ export class HouseService {
   private readonly apiRoot = environment.apiRoot;
   private readonly token = environment.token;
 
-  constructor(private http: HttpClient) {
-  }
+  constructor(private http: HttpClient) {}
 
   getHouses() {
     if (environment.offline) {

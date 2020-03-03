@@ -11,8 +11,6 @@ export class ItemComponent implements OnInit {
   @Input() headOfHouse: string;
   @Input() members: number;
 
-  constructor() {}
-
   ngOnInit(): void { }
 
 }
