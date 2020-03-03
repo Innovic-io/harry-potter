@@ -15,11 +15,11 @@ export class ListComponent implements OnInit {
   @Input() searchTerm: string;
   @Output() clickedHouse = new EventEmitter<string>();
 
-  constructor() { }
-   ngOnInit(): void {
-  }
   onClick(houseID) {
     this.clickedHouse.emit(houseID);
   }
+   ngOnInit(): void {
+  }
+
 
 }

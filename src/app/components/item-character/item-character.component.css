@@ -54,6 +54,7 @@
   flex-direction: row;
   min-height: 90px;
 }
+
 .school {
   width: 100px;
   margin: 10px;
@@ -61,6 +62,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .school p {
   font-size: 15px;
   color: #383838;

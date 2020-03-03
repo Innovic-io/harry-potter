@@ -14,8 +14,6 @@ export class BottomMenuComponent implements OnInit {
   public faHome = faHome;
   public appRouting = AppRouting;
 
-  constructor() {}
-
   ngOnInit(): void {
   }
 

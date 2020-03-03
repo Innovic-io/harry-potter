@@ -11,8 +11,7 @@ export class CharacterService {
   private readonly apiRoot = environment.apiRoot;
   private readonly token = environment.token;
 
-  constructor(private http: HttpClient) {
-  }
+  constructor(private http: HttpClient) {}
 
   getCharacter() {
     if (environment.offline) {
