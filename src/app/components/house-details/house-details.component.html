@@ -1,33 +1,33 @@
 <div class="flex-container">
   <div class="images">
-    <img src="../assets/logos/{{house.mascot}}.png" class="mascots">
+    <img src="../assets/logos/{{house?.mascot}}.png" class="mascots">
   </div>
   <div class="houses">
-    <p> {{ house.name }} </p>
+    <p> {{ house?.name }} </p>
   </div>
   <div class="border"></div>
-  <div class="schools" *ngIf="house.headOfHouse">
+  <div class="schools" *ngIf="house?.headOfHouse">
     <small>Head of house: </small>
-    <p> {{ house.headOfHouse }} </p>
+    <p> {{ house?.headOfHouse }} </p>
   </div>
   <div class="border"></div>
-  <div class="schools" *ngIf="house.school">
+  <div class="schools" *ngIf="house?.school">
     <small> School: </small>
-    <p> {{ house.school }} </p>
+    <p> {{ house?.school }} </p>
   </div>
   <div class="border"></div>
-  <div class="schools" *ngIf="house.founder">
+  <div class="schools" *ngIf="house?.founder">
     <small> Founder: </small>
-    <p> {{ house.founder }} </p>
+    <p> {{ house?.founder }} </p>
   </div>
   <div class="border"></div>
-  <div class="schools" *ngIf="house.houseGhost">
+  <div class="schools" *ngIf="house?.houseGhost">
     <small> Ghost: </small>
-    <p>  {{ house.houseGhost }} </p>
+    <p>  {{ house?.houseGhost }} </p>
   </div>
   <div class="border"></div>
   <div class="schools"><small>Members:</small>
-  <li *ngFor="let member of house.members"> {{ member.name }} </li>
+    <ul><li *ngFor="let member of house?.members"> {{ member?.name }} </li></ul>
   </div>
   <div class="border"></div>
   <div class="button">

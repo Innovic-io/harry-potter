@@ -3,7 +3,7 @@
   <img src="../assets/logos/{{mascot}}.png" class="mascots">
 </div>
 <div class="houses">
-  <p> {{ name }} </p>
+  <p [routerLink]="['/home', houseID]"> {{ name }} </p>
   <small> {{ headOfHouse }} </small>
   </div>
 <div class="members">

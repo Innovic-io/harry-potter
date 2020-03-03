@@ -10,6 +10,7 @@ export class ItemComponent implements OnInit {
   @Input() mascot: string;
   @Input() headOfHouse: string;
   @Input() members: number;
+  @Input() houseID: string;
 
   ngOnInit(): void { }
 

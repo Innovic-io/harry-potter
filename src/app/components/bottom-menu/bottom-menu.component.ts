@@ -12,13 +12,9 @@ export class BottomMenuComponent implements OnInit {
   public faUserCircle = faUserCircle;
   public faMagic = faMagic;
   public faHome = faHome;
-  public appRouting = AppRouting;
 
   ngOnInit(): void {
   }
 
-  onClick(event) {
-    this.clickedIcon.emit(event);
-  }
 }
 

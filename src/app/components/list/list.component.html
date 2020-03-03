@@ -3,7 +3,7 @@
           [mascot]="house?.mascot"
           [headOfHouse]="house?.headOfHouse"
           [members]="house?.members?.length"
-          (click)="onClick(house?._id)">
+          [houseID]="house?._id">
 </app-item>
 
 <div *ngIf="(houses | search:searchTerm)?.length === 0" class="illustration">

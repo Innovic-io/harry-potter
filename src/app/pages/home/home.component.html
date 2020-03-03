@@ -1,6 +1,5 @@
 <div class="header">
     <app-header [title]="isHouseView ? house?.name : appTitle" [isSearchOn]="isHouseView ? false : true" (searchValue)="onSearch($event)"></app-header>
 </div>
-<app-list *ngIf="isHouseView === false" [houses]="houses" [searchTerm]="search" (clickedHouse)="onClickHouse($event)"></app-list>
-<app-house-details *ngIf="isHouseView === true" [house]="house" (clickBack)="onClickBack($event)"></app-house-details>
+<router-outlet></router-outlet>
 
