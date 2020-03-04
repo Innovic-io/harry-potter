@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -13,31 +14,17 @@ import { SearchPipe } from './pipes/search.pipe';
 import { SpellsComponent } from './pages/spells/spells.component';
 import { CharactersComponent } from './pages/characters/characters.component';
 import { ItemSpellComponent } from './components/item-spell/item-spell.component';
-import { HouseDetailsComponent } from './components/house-details/house-details.component';
+import { HouseDetailsComponent } from './pages/house-details/house-details.component';
 import { SearchSpellsPipe } from './pipes/search-spells.pipe';
 import { ItemCharacterComponent } from './components/item-character/item-character.component';
 import { SearchCharactersPipe } from './pipes/search-characters.pipe';
-import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
-  {
-    path: 'home',
-    component: HomeComponent,
-    children: [
-     {
-      path: '',
-      component: ListComponent
-      },
-      {
-      path: ':id',
-      component: HouseDetailsComponent
-      }
-    ]
-  },
-  {path: 'spells', component: SpellsComponent},
-  {path: 'characters', component: CharactersComponent},
-  {path: '', redirectTo: '/home', pathMatch: 'full'}
-
+  { path: 'home',  component: HomeComponent },
+  { path: 'home/:id',  component: HouseDetailsComponent },
+  { path: 'spells', component: SpellsComponent },
+  { path: 'characters', component: CharactersComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 
 @NgModule({
@@ -63,7 +50,6 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
-      {enableTracing: true}
     )
   ],
   providers: [],

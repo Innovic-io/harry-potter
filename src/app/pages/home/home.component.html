@@ -1,6 +1,5 @@
 <div class="header">
-    <app-header [title]="isHouseView ? house?.name : appTitle" [isSearchOn]="isHouseView ? false : true" (searchValue)="onSearch($event)"></app-header>
+    <app-header [title]="appTitle" [isSearchOn]="true" (searchValue)="onSearch($event)"></app-header>
 </div>
-<router-outlet></router-outlet>
 
- 
+<app-list [houses]="houses" [searchTerm]="search"></app-list>

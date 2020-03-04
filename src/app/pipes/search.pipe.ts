@@ -1,4 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
+
 import { IHouses } from '../models/houses';
 
 @Pipe({
@@ -10,6 +11,7 @@ export class SearchPipe implements PipeTransform {
     if (!items || !searchText) {
       return items;
     }
+
     return items.filter(item => {
       const houseName = item.name.toLowerCase().includes(searchText.toLowerCase());
       const headOfHouse = item.headOfHouse.toLowerCase().includes(searchText.toLowerCase());

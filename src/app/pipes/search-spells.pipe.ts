@@ -1,4 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
+
 import { ISpells } from '../models/spells';
 
 @Pipe({
@@ -7,7 +8,6 @@ import { ISpells } from '../models/spells';
 export class SearchSpellsPipe implements PipeTransform {
 
   transform(items: ISpells[], searchText: string): ISpells[] {
-    console.log(searchText);
     if (!items || !searchText) {
       return items;
     }

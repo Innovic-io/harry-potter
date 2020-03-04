@@ -12,12 +12,17 @@ export class HomeComponent implements OnInit {
   public appTitle = 'Houses';
   public search: string;
   public houses: IHouses[];
-  public house: IHouses;
-  public isHouseView = false;
+
+  constructor(private http: HouseService) {}
+
   onSearch(event) {
     this.search = event;
   }
-  constructor(private http: HouseService) {}
+
   ngOnInit(): void {
+    this.http.getHouses()
+      .subscribe((data: IHouses[]) => {
+        this.houses = data;
+      });
   }
 }

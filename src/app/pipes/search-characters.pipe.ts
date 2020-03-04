@@ -1,4 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
+
 import { ICharacters } from '../models/characters';
 
 @Pipe({
@@ -7,7 +8,6 @@ import { ICharacters } from '../models/characters';
 export class SearchCharactersPipe implements PipeTransform {
 
   transform(items: ICharacters[], searchText: string): ICharacters[] {
-    console.log(searchText);
     if (!items || !searchText) {
       return items;
     }

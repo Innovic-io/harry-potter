@@ -1,12 +1,14 @@
-<div class="flex-container">
-<div class="images">
-  <img src="../assets/logos/{{mascot}}.png" class="mascots">
-</div>
-<div class="houses">
-  <p [routerLink]="['/home', houseID]"> {{ name }} </p>
-  <small> {{ headOfHouse }} </small>
+<a [routerLink]="['/home', houseID]">
+  <div class="flex-container">
+    <div class="images">
+      <img src="../assets/logos/{{mascot}}.png" class="mascots">
+    </div>
+    <div class="houses">
+       {{ name }}
+      <small> {{ headOfHouse }} </small>
+      </div>
+    <div class="members">
+      <p> {{ members }} </p>
+    </div>
   </div>
-<div class="members">
-  <p> {{ members }} </p>
-</div>
-</div>
+</a>

@@ -27,11 +27,13 @@
   </div>
   <div class="border"></div>
   <div class="schools"><small>Members:</small>
-    <ul><li *ngFor="let member of house?.members"> {{ member?.name }} </li></ul>
+    <ul>
+      <li *ngFor="let member of house?.members"> {{ member?.name }} </li>
+    </ul>
   </div>
   <div class="border"></div>
   <div class="button">
-  <button class="backButton" (click)='onClickBack(false)'>Go back</button>
+  <button class="backButton">Go back</button>
   </div>
 </div>
 

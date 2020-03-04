@@ -13,11 +13,10 @@ export class SpellsComponent implements OnInit {
   public spells: ISpells[];
   public search: string;
 
+  constructor(private http: SpellService) {}
+
   onSearch(event) {
     this.search = event;
-  }
-
-  constructor(private http: SpellService) {
   }
 
   ngOnInit(): void {
