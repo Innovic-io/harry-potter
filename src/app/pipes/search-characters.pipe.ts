@@ -1,6 +1,6 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import {Pipe, PipeTransform} from '@angular/core';
 
-import { ICharacters } from '../models/characters';
+import {ICharacters} from '../models/characters';
 
 @Pipe({
   name: 'searchCharacters'

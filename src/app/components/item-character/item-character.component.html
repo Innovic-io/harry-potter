@@ -1,11 +1,23 @@
 <div class="flex-container">
   <div class="nameOfCharacter">
     <p> {{ name }} </p>
-    <div class="badges">
-    <img title="hello" *ngIf="dumbledoresArmy" src="/assets/badges/dumbledoresArmy.jpg" class="images">
-    <img *ngIf="deathEater" src="/assets/badges/deathEater.png" class="images">
-    <img *ngIf="ministryOfMagic" src="/assets/badges/ministryOfMagic.png" class="images">
-    <img *ngIf="orderOfThePhoenix" src="/assets/badges/orderOfThePhoenix.png" class="images">
+    <div *ngIf="dumbledoresArmy || deathEater || ministryOfMagic || orderOfThePhoenix" class="badges">
+      <div *ngIf="dumbledoresArmy" class="divBadges">
+        <label>Dumbledores Army </label>
+        <img src="/assets/badges/dumbledoresArmy.jpg" class="images">
+      </div>
+      <div *ngIf="deathEater" class="divBadges">
+        <label>Death Eather </label>
+          <img  src="/assets/badges/deathEater.png" class="images">
+      </div>
+      <div *ngIf="ministryOfMagic" class="divBadges">
+        <label> Ministry Of Magic </label>
+          <img  src="/assets/badges/ministryOfMagic.png" class="images">
+      </div>
+        <div *ngIf="orderOfThePhoenix" class="divBadges">
+          <label>Order Of The Phoenix </label>
+          <img src="/assets/badges/orderOfThePhoenix.png" class="images">
+          </div>
     </div>
   </div>
   <div class="effect">
