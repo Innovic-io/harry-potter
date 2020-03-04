@@ -18,6 +18,8 @@ import { HouseDetailsComponent } from './pages/house-details/house-details.compo
 import { SearchSpellsPipe } from './pipes/search-spells.pipe';
 import { ItemCharacterComponent } from './components/item-character/item-character.component';
 import { SearchCharactersPipe } from './pipes/search-characters.pipe';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 const appRoutes: Routes = [
   { path: 'home',  component: HomeComponent },
@@ -50,7 +52,8 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
-    )
+    ),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
