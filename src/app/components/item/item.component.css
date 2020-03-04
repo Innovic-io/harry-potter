@@ -5,6 +5,12 @@
   display: flex;
 }
 
+a {
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+}
+
 .images {
   width: 100px;
   margin: 10px;

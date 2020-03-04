@@ -1,4 +1,8 @@
 <div class="flex-container">
+<div class="header">
+  <app-header [title]="house?.name" [isSearchOn]="false"></app-header>
+</div>
+
   <div class="images">
     <img src="../assets/logos/{{house?.mascot}}.png" class="mascots">
   </div>
@@ -30,10 +34,6 @@
     <ul>
       <li *ngFor="let member of house?.members"> {{ member?.name }} </li>
     </ul>
-  </div>
-  <div class="border"></div>
-  <div class="button">
-  <button class="backButton">Go back</button>
   </div>
 </div>
 
